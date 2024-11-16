@@ -41,16 +41,14 @@ def display_header():
     f"{Fore.YELLOW}     @ @ @    @ @ @ @        @     @    ",
     f"{Fore.CYAN}     @        @     @   @ @ @      @     ",
     f"{Fore.WHITE}    ", 
-    f"{Fore.RED}      @ @ @ @ @     @             @ @         @ @ @  @       @  ",
-    f"{Fore.RED}      @    ;    @   @           @      @    @        @     @    ",
+    f"{Fore.RED}     @ @ @ @ @     @             @ @         @ @ @  @       @  ",
+    f"{Fore.RED}     @    ;    @   @           @      @    @        @     @    ",
     f"{Fore.WHITE}     @         @   @          @        @  @         @   @      ",
     f"{Fore.WHITE}     @ @ @ @ @     @          @        @  @         @ @        ",
     f"{Fore.GREEN}     @         @   @          @  @ @ @ @  @         @   @      ",
     f"{Fore.GREEN}     @         @   @          @        @   @        @     @    ",
     f"{Fore.YELLOW}     @ @ @ @ @     @ @ @ @ @  @        @     @ @ @  @       @  ",
-    f"{Fore.YELLOW}  ",                                            
-    f"{Fore.YELLOW}==================================================================",                                               
-    ]
+     ]
 # Tampilkan header dengan warna
     for line in header_lines:
         print(line)
@@ -120,4 +118,4 @@ if __name__ == "__main__":
         attack_duration = 60  # Default durasi
 
     # Luncurkan serangan
-    launch_attack(target_url, attack_duration
+    launch_attack(target_url, attack_duration)
