@@ -1,0 +1,8 @@
+httpx
+asyncio
+validator
+socks
+pysocks
+cloudscraper
+colorama
+undetected_chromedriver
