@@ -34,20 +34,20 @@ def log_attack_status(message, level='info', print_to_terminal=True):
 # Fungsi untuk Menampilkan Header BASE dengan Warna
 def display_header():
     header_lines = [ 
-    f"{Fore.GREEN}     
-    f"{Fore.GREEN}     
-    f"{Fore.GREEN}     
-    f"{Fore.RED}     
-    f"{Fore.RED}     
-    f"{Fore.RED}    
-    f"{Fore.RED}     
-    f"{Fore.RED}    
-    f"{Fore.CYAN}     
-    f"{Fore.CYAN}   
-    f"{Fore.CYAN}     
-    f"{Fore.GREEN}     
-    f"{Fore.YELLOW}    
-     ]
+    f"{Fore.YELLOW}                                                                            ",
+    f"{Fore.YELLOW}        _/ _/ _/      _/  _/ _/ _/   _/        _/       _/ _/    _/   _/   ",
+    f"{Fore.YELLOW}       _/       _/   _/  _/      _/ _/       _/ _/    _/        _/  _/    ",
+    f"{Fore.RED}         _/       _/       _/      _/ _/       _/  _/  _/         _/ _/     ",
+    f"{Fore.RED}        _/ _/ _/          _/ _/ _/   _/       _/   _/ _/         _/ _/      ",
+    f"{Fore.CYAN}      _/                _/      _/ _/       _/ _/ _/  _/       _/   _/     ",
+    f"{Fore.CYAN}     _/                _/ _/ _/   _/ _/ _/ _/     _/   _/ _/  _/     _/     ",
+    f"{Fore.RED}╔═════════════════════════════════════════════════════════════════╗ ",   
+    f"{Fore.RED}║\033[32m                 PASTBLACK IS A FALLING DARK ATTACK                  ║ ",
+    f"{Fore.RED}║\033[33m              FOR THE PURPOSE OF RECOMMENDING ARROGANCE              ║ ",
+    f"{Fore.RED}║\033[34m                    THEN USE IT FOR GOOD PURPOSES                    ║ ",
+    f"{Fore.RED}║\033[35m                           Design By: Kun'F                          ║ ",
+    f"{Fore.RED}╚═════════════════════════════════════════════════════════════════╝ ",    
+    ]
 # Tampilkan header dengan warna
     for line in header_lines:
         print(line)
