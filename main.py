@@ -87,7 +87,7 @@ def get_target(url):
         'uri': urlparse(url).path or "/",
         'host': urlparse(url).netloc,
         'scheme': urlparse(url).scheme,
-        'port': urlparse(url).netloc.split(":")[1] if ":" in urlparse(url).netloc else ("443" if urlparse(url).scheme "https" else "80")
+        'port': urlparse(url).netloc.split(":")[1] if ":" in urlparse(url).netloc else ("443" if urlparse(url).scheme == "https" else "80")
     }
     log_attack_status(f"Target diperoleh: {target['host']} ({target['scheme']}://{target['host']}:{target['port']}{target['uri']})")
     return target
