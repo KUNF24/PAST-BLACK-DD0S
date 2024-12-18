@@ -68,7 +68,7 @@ def countdown(t):
         remaining_time = (until - datetime.datetime.now()).total_seconds()
         if remaining_time > 1:
             stdout.flush()
-            stdout.write(f"\r{Fore.MAGENTA}[*] {Fore.CYAN}P-BLACK {Fore.YELLOW} FLOODING THE WEBS}{Fore.BLUE}::.. {remaining_time:.2f}{' ' * 26}|")
+            stdout.write(f"\r{Fore.MAGENTA}[*] {Fore.CYAN}P-BLACK {Fore.YELLOW} FLOODING THE WEBS  {Fore.BLUE}::.. {remaining_time:.2f}{' ' * 26}|")
         else:
             stdout.flush()
             stdout.write(f"\r{Fore.MAGENTA}|    [*] Attack Done!{' ' * 53}|\n")
