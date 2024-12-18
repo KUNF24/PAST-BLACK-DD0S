@@ -2,6 +2,7 @@
 #! /usr/bin/python3,11                                                                                                                   import os
 import requests
 import datetime
+import time
 import asyncio
 import validators
 from urllib.parse import urlparse
@@ -64,7 +65,7 @@ def countdown(t):
     until = datetime.datetime.now() + datetime.timedelta(seconds=int(t))
     while True:
         remaining_time = (until - datetime.datetime.now()).total_seconds()
-        if remaining_time > 0:
+        if remaining_time > 1:
             stdout.flush()
             stdout.write(f"\r{Fore.MAGENTA}[*] {Fore.CYAN}P-BLACK {Fore.WHITE}Request-attack to  {Fore.YELLOW}" +str(url)+ "{Fore.PURPLE}=> {remaining_time:.2f} sec left {' ' * 26}|")
         else:
