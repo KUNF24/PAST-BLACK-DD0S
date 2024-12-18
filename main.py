@@ -45,10 +45,10 @@ def display_header():
     f"{Fore.WHITE} _/               _/ _/ _/   _/ _/ _/ _/     _/   _/ _/  _/     _/     ",
     f"{Fore.CYAN}                                                                           ",
     f"{Fore.RED}╔═════════════════════════════════════════════════════════════════╗ ",   
-    f"{Fore.RED}║\033[32m                 PASTBLACK IS A FALLING DARK ATTACK            {Fore.RED}║ ",
-    f"{Fore.RED}║\033[33m              FOR THE PURPOSE OF RECOMMENDING ARROGANCE        {Fore.RED}║ ",
-    f"{Fore.RED}║\033[34m                    THEN USE IT FOR GOOD PURPOSES              {Fore.RED}║ ",
-    f"{Fore.RED}║\033[35m                           Design By: Kun'F                    {Fore.RED}║ ",
+    f"{Fore.RED}║\033[32m                 PASTBLACK IS A FALLING DARK ATTACK              {Fore.RED}║ ",
+    f"{Fore.RED}║\033[33m              FOR THE PURPOSE OF RECOMMENDING ARROGANCE          {Fore.RED}║ ",
+    f"{Fore.RED}║\033[34m                    THEN USE IT FOR GOOD PURPOSES                {Fore.RED}║ ",
+    f"{Fore.RED}║\033[35m                           Design By: Kun'F                      {Fore.RED}║ ",
     f"{Fore.RED}╚═════════════════════════════════════════════════════════════════╝ ",    
     ]
 
