@@ -37,8 +37,8 @@ def log_attack_status(message, level='info', print_to_terminal=True):
 def display_header():
     header_lines =[
     f"{Fore.YELLOW}                                                                            ",
-    f"{Fore.YELLOW}      _/ _/ _/     _/  _/ _/ _/   _/        _/       _/ _/    _/    _/   ",
-    f"{Fore.YELLOW}     _/       _/  _/  _/      _/ _/       _/ _/    _/        _/   _/    ",
+    f"{Fore.YELLOW}     _/ _/ _/     _/  _/ _/ _/   _/        _/       _/ _/    _/    _/   ",
+    f"{Fore.YELLOW}   _/       _/  _/  _/      _/ _/       _/ _/    _/        _/   _/    ",
     f"{Fore.WHITE}   _/       _/      _/      _/ _/       _/  _/  _/         _/  _/     ",
     f"{Fore.WHITE}  _/ _/ _/         _/ _/ _/   _/       _/   _/ _/         _/ _/      ",
     f"{Fore.CYAN} _/               _/      _/ _/       _/ _/ _/  _/       _/   _/     ",
@@ -68,7 +68,7 @@ def countdown(t):
         remaining_time = (until - datetime.datetime.now()).total_seconds()
         if remaining_time > 1:
             stdout.flush()
-            stdout.write(f"\r{Fore.MAGENTA}[*] {Fore.CYAN}P-BLACK {Fore.WHITE}Request-attack to  {Fore.YELLOW}" +str(url)+ "{Fore.PURPLE}=> {remaining_time:.2f} sec left {' ' * 26}|")
+            stdout.write(f"\r{Fore.MAGENTA}[*] {Fore.CYAN}P-BLACK {Fore.WHITE}Request-attack to  {Fore.YELLOW{target[host]}{Fore.PURPLE}=> {remaining_time:.2f} sec left {' ' * 26}|")
         else:
             stdout.flush()
             stdout.write(f"\r{Fore.MAGENTA}|    [*] Attack Done!{' ' * 53}|\n")
@@ -103,7 +103,7 @@ if __name__ == "__main__":
     display_header()
 
     # Prompt untuk input dari pengguna dengan tampilan yang rapi
-    target_url = get_user_input("Masukkan target URL:   ")
+    target_url = get_user_input("URL:   ")
     while not validators.url(target_url):
         print(f"{Fore.RED}|    [ERROR] URL tidak valid. Coba lagi.{' ' * 37}|")
         print(f"{Fore.CYAN}|{'=' * 74}|")
