@@ -48,9 +48,6 @@ def display_header():
     f"{Fore.RED}║\033[35m                           Design By: Kun'F                          ║ ",
     f"{Fore.RED}╚═════════════════════════════════════════════════════════════════╝ ",    
     ]
-# Tampilkan header dengan warna
-    for line in header_lines:
-        print(line)
 
     # Versi dan URL
     print(f"{Fore.WHITE}{Style.BRIGHT}{' ' * 57}v.1.0")
