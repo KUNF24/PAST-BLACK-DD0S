@@ -52,6 +52,10 @@ def display_header():
     for line in header_lines:
         print(line)
 
+# Versi dan URL
+    print(f"{Fore.WHITE}{Style.BRIGHT}{' ' * 57}v.1.0")
+    print(f"{Fore.CYAN}{Style.BRIGHT}{' ' * 16}https://github.com/KUNF24/PASTBLACK-DD0S.git")
+
 # Fungsi untuk Meminta Input dari Pengguna dengan Tampilan Rapi
 def get_user_input(prompt_message):
     print(f"{Fore.GREEN}{' ' * 4}[?] {prompt_message.ljust(63)}")
