@@ -37,8 +37,8 @@ def log_attack_status(message, level='info', print_to_terminal=True):
 def display_header():
     header_lines =[
     f"{Fore.YELLOW}                                                                            ",
-    f"{Fore.YELLOW}     _/ _/ _/     _/  _/ _/ _/   _/        _/       _/ _/    _/    _/   ",
-    f"{Fore.YELLOW}    _/       _/  _/  _/      _/ _/       _/ _/    _/        _/   _/    ",
+    f"{Fore.YELLOW}      _/ _/ _/     _/  _/ _/ _/   _/        _/       _/ _/    _/    _/   ",
+    f"{Fore.YELLOW}     _/       _/  _/  _/      _/ _/       _/ _/    _/        _/   _/    ",
     f"{Fore.WHITE}   _/       _/      _/      _/ _/       _/  _/  _/         _/  _/     ",
     f"{Fore.WHITE}  _/ _/ _/         _/ _/ _/   _/       _/   _/ _/         _/ _/      ",
     f"{Fore.CYAN} _/               _/      _/ _/       _/ _/ _/  _/       _/   _/     ",
