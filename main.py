@@ -44,12 +44,12 @@ def display_header():
     f"{Fore.WHITE}  _/               _/      _/ _/       _/ _/ _/  _/       _/   _/     ",
     f"{Fore.WHITE} _/               _/ _/ _/   _/ _/ _/ _/     _/   _/ _/  _/     _/     ",
     f"{Fore.CYAN}                                                                           ",
-    f"{Fore.RED}╔════════════════════════════════════════════════════════════════════╗ ",   
-    f"{Fore.RED}║\033[32m                 PASTBLACK IS A FALLING DARK ATTACK           {Fore.RED}║ ",
-    f"{Fore.RED}║\033[33m              FOR THE PURPOSE OF RECOMMENDING ARROGANCE       {Fore.RED}║ ",
-    f"{Fore.RED}║\033[34m                    THEN USE IT FOR GOOD PURPOSES             {Fore.RED}║ ",
-    f"{Fore.RED}║\033[35m                           Design By: Kun'F                   {Fore.RED}║ ",
-    f"{Fore.RED}╚════════════════════════════════════════════════════════════════════╝ ",    
+    f"{Fore.RED}╔═════════════════════════════════════════════════════════════════╗ ",   
+    f"{Fore.RED}║\033[32m                 PASTBLACK IS A FALLING DARK ATTACK            {Fore.RED}║ ",
+    f"{Fore.RED}║\033[33m              FOR THE PURPOSE OF RECOMMENDING ARROGANCE        {Fore.RED}║ ",
+    f"{Fore.RED}║\033[34m                    THEN USE IT FOR GOOD PURPOSES              {Fore.RED}║ ",
+    f"{Fore.RED}║\033[35m                           Design By: Kun'F                    {Fore.RED}║ ",
+    f"{Fore.RED}╚═════════════════════════════════════════════════════════════════╝ ",    
     ]
 
 # Tampilkan header dengan warna
@@ -68,7 +68,7 @@ def countdown(t):
         remaining_time = (until - datetime.datetime.now()).total_seconds()
         if remaining_time > 1:
             stdout.flush()
-            stdout.write(f"\r{Fore.MAGENTA}[*] {Fore.CYAN}P-BLACK {Fore.YELLOW}::.. {remaining_time:.2f}{' ' * 26}|")
+            stdout.write(f"\r{Fore.MAGENTA}[*] {Fore.CYAN}P-BLACK {Fore.YELLOW} FLOODING THE WEBS}{Fore.BLUE}::.. {remaining_time:.2f}{' ' * 26}|")
         else:
             stdout.flush()
             stdout.write(f"\r{Fore.MAGENTA}|    [*] Attack Done!{' ' * 53}|\n")
