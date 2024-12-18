@@ -37,8 +37,8 @@ def display_header():
     f"{Fore.YELLOW}                                                                            ",
     f"{Fore.YELLOW}      _/ _/ _/     _/  _/ _/ _/   _/        _/       _/ _/    _/    _/   ",
     f"{Fore.YELLOW}     _/       _/  _/  _/      _/ _/       _/ _/    _/        _/   _/    ",
-    f"{Fore.RED}    _/       _/      _/      _/ _/       _/  _/  _/         _/  _/     ",
-    f"{Fore.RED}   _/ _/ _/         _/ _/ _/   _/       _/   _/ _/         _/ _/      ",
+    f"{Fore.WHITE}    _/       _/      _/      _/ _/       _/  _/  _/         _/  _/     ",
+    f"{Fore.WHITE}   _/ _/ _/         _/ _/ _/   _/       _/   _/ _/         _/ _/      ",
     f"{Fore.CYAN}  _/               _/      _/ _/       _/ _/ _/  _/       _/   _/     ",
     f"{Fore.CYAN} _/               _/ _/ _/   _/ _/ _/ _/     _/   _/ _/  _/     _/     ",
     f"{Fore.RED}╔════════════════════════════════════════════════════════════════════╗ ",   
@@ -106,7 +106,7 @@ if __name__ == "__main__":
         target_url = get_user_input("URL: ")
 
     try:
-        attack_duration = int(get_user_input("Attac_uration: "))
+        attack_duration = int(get_user_input("Attack_duration: "))
     except ValueError:
         attack_duration = 60  # Default durasi
 
