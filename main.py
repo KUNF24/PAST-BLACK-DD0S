@@ -49,6 +49,10 @@ def display_header():
     f"{Fore.RED}╚═════════════════════════════════════════════════════════════════╝ ",    
     ]
 
+   # Tampilkan header dengan warna
+    for line in header_lines:
+        print(line)
+      
     # Versi dan URL
     print(f"{Fore.WHITE}{Style.BRIGHT}{' ' * 57}v.1.0")
     print(f"{Fore.CYAN}{Style.BRIGHT}{' ' * 16}https://github.com/KUNF24/PASTBLACK-DD0S.git")
@@ -105,11 +109,10 @@ if __name__ == "__main__":
     target_url = get_user_input("URL:   ")
     while not validators.url(target_url):
         print(f"{Fore.RED}|    [ERROR] URL tidak valid. Coba lagi.{' ' * 37}|")
-        print(f"{Fore.CYAN}|{'=' * 74}|")
         target_url = get_user_input("URL:")
 
     try:
-        attack_duration = int(get_user_input("Duration(second):"))
+        attack_duration = int(get_user_input("Duration attack (second):"))
     except ValueError:
         attack_duration = 60  # Default durasi
 
