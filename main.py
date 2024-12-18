@@ -50,7 +50,7 @@ def display_header():
     ]
     # Tampilkan header dengan warna
     for line in header_lines:
-        print(line)
+        print()
       
 # Fungsi untuk Meminta Input dari Pengguna dengan Tampilan Rapi
 def get_user_input(prompt_message):
