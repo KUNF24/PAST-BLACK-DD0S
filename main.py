@@ -35,12 +35,12 @@ def log_attack_status(message, level='info', print_to_terminal=True):
 def display_header():
     header_lines = [ 
     f"{Fore.YELLOW}                                                                            ",
-    f"{Fore.YELLOW}      _/ _/ _/      _/  _/ _/ _/   _/        _/       _/ _/    _/    _/   ",
-    f"{Fore.YELLOW}     _/       _/   _/  _/      _/ _/       _/ _/    _/        _/   _/    ",
-    f"{Fore.RED}    _/       _/       _/      _/ _/       _/  _/  _/         _/  _/     ",
-    f"{Fore.RED}   _/ _/ _/          _/ _/ _/   _/       _/   _/ _/         _/ _/      ",
-    f"{Fore.CYAN}  _/                _/      _/ _/       _/ _/ _/  _/       _/    _/     ",
-    f"{Fore.CYAN} _/                _/ _/ _/   _/ _/ _/ _/     _/   _/ _/  _/      _/     ",
+    f"{Fore.YELLOW}      _/ _/ _/     _/  _/ _/ _/   _/        _/       _/ _/    _/    _/   ",
+    f"{Fore.YELLOW}     _/       _/  _/  _/      _/ _/       _/ _/    _/        _/   _/    ",
+    f"{Fore.RED}    _/       _/      _/      _/ _/       _/  _/  _/         _/  _/     ",
+    f"{Fore.RED}   _/ _/ _/         _/ _/ _/   _/       _/   _/ _/         _/ _/      ",
+    f"{Fore.CYAN}  _/               _/      _/ _/       _/ _/ _/  _/       _/   _/     ",
+    f"{Fore.CYAN} _/               _/ _/ _/   _/ _/ _/ _/     _/   _/ _/  _/     _/     ",
     f"{Fore.RED}╔════════════════════════════════════════════════════════════════════╗ ",   
     f"{Fore.RED}║\033[32m                   PASTBLACK IS A FALLING DARK ATTACK               ║ ",
     f"{Fore.RED}║\033[33m                FOR THE PURPOSE OF RECOMMENDING ARROGANCE           ║ ",
@@ -51,10 +51,6 @@ def display_header():
     # Tampilkan header dengan warna
     for line in header_lines:
         print(line)
-
-# Versi dan URL
-    print(f"{Fore.WHITE}{Style.BRIGHT}{' ' * 57}v.1.0")
-    print(f"{Fore.CYAN}{Style.BRIGHT}{' ' * 16}https://github.com/KUNF24/PASTBLACK-DD0S.git")
 
 # Fungsi untuk Meminta Input dari Pengguna dengan Tampilan Rapi
 def get_user_input(prompt_message):
@@ -110,7 +106,7 @@ if __name__ == "__main__":
         target_url = get_user_input("URL: ")
 
     try:
-        attack_duration = int(get_user_input("Duration: "))
+        attack_duration = int(get_user_input("Attac_uration: "))
     except ValueError:
         attack_duration = 60  # Default durasi
 
