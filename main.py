@@ -68,6 +68,7 @@ def countdown(t):
         remaining_time = (until - datetime.datetime.now()).total_seconds()
         if remaining_time > 1:
             stdout.flush()
+            stdout.write(f"\r{Fore.BLUE}[*] {Fore.MAGENTA}P-BLACK {Fore.WHITE} FLOODING THE WEBS  {Fore.RED}::.. {remaining_time:.2f}{' ' * 26}|")  
             stdout.write(f"\r{Fore.MAGENTA}[*] {Fore.CYAN}P-BLACK {Fore.YELLOW} FLOODING THE WEBS  {Fore.BLUE}::.. {remaining_time:.2f}{' ' * 26}|")
         else:
             stdout.flush()
@@ -87,7 +88,7 @@ def get_target(url):
         'scheme': urlparse(url).scheme,
         'port': urlparse(url).netloc.split(":")[1] if ":" in urlparse(url).netloc else ("443" if urlparse(url).scheme == "https" else "80")
     }
-    log_attack_status(f"Target diperoleh: {target['host']} ({target['scheme']}://{target['host']}:{target['port']}{target['uri']})")
+    log_attack_status(f"Target: {target['host']} ({target['scheme']}://{target['host']}:{target['port']}{target['uri']})")
     return target
 
 # Fungsi Serangan Utama
@@ -95,7 +96,7 @@ def launch_attack(target_url, duration):
     target = get_target(target_url)
 
     # Inisialisasi Serangan dan Waktu Serangan
-    log_attack_status(f"Meluncurkan serangan ke {target['host']} untuk {duration} detik...")
+    log_attack_status(f"Attack {target['host']} for {duration} second...")
     countdown(duration)
 
 if __name__ == "__main__":
