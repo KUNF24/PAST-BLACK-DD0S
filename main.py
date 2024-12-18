@@ -35,18 +35,18 @@ def log_attack_status(message, level='info', print_to_terminal=True):
 def display_header():
     header_lines = [ 
     f"{Fore.YELLOW}                                                                            ",
-    f"{Fore.YELLOW}        _/ _/ _/      _/  _/ _/ _/   _/        _/       _/ _/    _/   _/   ",
-    f"{Fore.YELLOW}       _/       _/   _/  _/      _/ _/       _/ _/    _/        _/  _/    ",
-    f"{Fore.RED}      _/       _/       _/      _/ _/       _/  _/  _/         _/ _/     ",
-    f"{Fore.RED}     _/ _/ _/          _/ _/ _/   _/       _/   _/ _/         _/ _/      ",
-    f"{Fore.CYAN}    _/                _/      _/ _/       _/ _/ _/  _/       _/   _/     ",
-    f"{Fore.CYAN}   _/                _/ _/ _/   _/ _/ _/ _/     _/   _/ _/  _/     _/     ",
-    f"{Fore.RED}╔═════════════════════════════════════════════════════════════════╗ ",   
-    f"{Fore.RED}║\033[32m                 PASTBLACK IS A FALLING DARK ATTACK                  ║ ",
-    f"{Fore.RED}║\033[33m              FOR THE PURPOSE OF RECOMMENDING ARROGANCE              ║ ",
-    f"{Fore.RED}║\033[34m                    THEN USE IT FOR GOOD PURPOSES                    ║ ",
-    f"{Fore.RED}║\033[35m                           Design By: Kun'F                          ║ ",
-    f"{Fore.RED}╚═════════════════════════════════════════════════════════════════╝ ",    
+    f"{Fore.YELLOW}           _/ _/ _/      _/  _/ _/ _/   _/        _/       _/ _/    _/    _/   ",
+    f"{Fore.YELLOW}          _/       _/   _/  _/      _/ _/       _/ _/    _/        _/   _/    ",
+    f"{Fore.RED}            _/       _/       _/      _/ _/       _/  _/  _/         _/  _/     ",
+    f"{Fore.RED}           _/ _/ _/          _/ _/ _/   _/       _/   _/ _/         _/ _/      ",
+    f"{Fore.CYAN}         _/                _/      _/ _/       _/ _/ _/  _/       _/    _/     ",
+    f"{Fore.CYAN}        _/                _/ _/ _/   _/ _/ _/ _/     _/   _/ _/  _/      _/     ",
+    f"{Fore.RED}╔══════════════════════════════════════════════════════════════════════════╗ ",   
+    f"{Fore.RED}║\033[32m                       PASTBLACK IS A FALLING DARK ATTACK                     ║ ",
+    f"{Fore.RED}║\033[33m                    FOR THE PURPOSE OF RECOMMENDING ARROGANCE                 ║ ",
+    f"{Fore.RED}║\033[34m                          THEN USE IT FOR GOOD PURPOSES                       ║ ",
+    f"{Fore.RED}║\033[35m                                 Design By: Kun'F                             ║ ",
+    f"{Fore.RED}╚══════════════════════════════════════════════════════════════════════════╝ ",    
     ]
     # Tampilkan header dengan warna
     for line in header_lines:
@@ -103,10 +103,10 @@ if __name__ == "__main__":
     while not validators.url(target_url):
         print(f"{Fore.RED}|    [ERROR] URL tidak valid. Coba lagi.{' ' * 37}|")
         print(f"{Fore.CYAN}|{'=' * 74}|")
-        target_url = get_user_input("URL:")
+        target_url = get_user_input("URL: ")
 
     try:
-        attack_duration = int(get_user_input("Duration attack (second):"))
+        attack_duration = int(get_user_input("Duration: "))
     except ValueError:
         attack_duration = 60  # Default durasi
 
