@@ -1,6 +1,7 @@
 # -*- coding: utf-8 -*-                                                                                                                    import os
 import requests
 import datetime
+import time
 import asyncio
 import validators
 from urllib.parse import urlparse
@@ -20,11 +21,11 @@ def log_attack_status(message, level='info', print_to_terminal=True):
     if level == 'info':
         logging.info(message)
         if print_to_terminal:
-            print(f"{Fore.CYAN} [INFO] {Target.ljust(63)}")
+            print(f"{Fore.CYAN} [INFO] {massage.ljust(63)}")
     elif level == 'error':
         logging.error(message)
         if print_to_terminal:
-            print(f"{Fore.RED} [ERROR] {Second.ljust(63)}")
+            print(f"{Fore.RED} [ERROR] {massage.ljust(63)}")
     elif level == 'warning':
         logging.warning(message)
         if print_to_terminal:
@@ -43,10 +44,10 @@ def display_header():
     f"{Fore.CYAN} _/               _/ _/ _/   _/ _/ _/ _/     _/   _/ _/  _/     _/     ",
     f"{Fore.CYAN}                                                                           ",
     f"{Fore.RED}╔════════════════════════════════════════════════════════════════════╗ ",   
-    f"{Fore.RED}║\033[32m                 PASTBLACK IS A FALLING DARK ATTACK                 ║ ",
-    f"{Fore.RED}║\033[33m              FOR THE PURPOSE OF RECOMMENDING ARROGANCE             ║ ",
-    f"{Fore.RED}║\033[34m                    THEN USE IT FOR GOOD PURPOSES                   ║ ",
-    f"{Fore.RED}║\033[35m                           Design By: Kun'F                         ║ ",
+    f"{Fore.RED}║\033[32m                 PASTBLACK IS A FALLING DARK ATTACK       {Fore.RED}║ ",
+    f"{Fore.RED}║\033[33m              FOR THE PURPOSE OF RECOMMENDING ARROGANCE   {Fore.RED}║ ",
+    f"{Fore.RED}║\033[34m                    THEN USE IT FOR GOOD PURPOSES         {Fore.RED}║ ",
+    f"{Fore.RED}║\033[35m                           Design By: Kun'F               {Fore.RED}║ ",
     f"{Fore.RED}╚════════════════════════════════════════════════════════════════════╝ ",    
     ]
     # Tampilkan header dengan warna
@@ -65,10 +66,10 @@ def countdown(t):
         remaining_time = (until - datetime.datetime.now()).total_seconds()
         if remaining_time > 0:
             stdout.flush()
-            stdout.write(f"\r{Fore.MAGENTA}|    [*] Attack status => {remaining_time:.2f} sec left {' ' * 26}|")
+            stdout.write(f"\r{Fore.MAGENTA}[*] {Fore.CYAN}P-BLACK {Fore.WHITE}Request-attack to  {Fore.YELLOW}" +str(url)+ "{Fore.PURPLE}=> {remaining_time:.2f} sec left {' ' * 26}|")
         else:
             stdout.flush()
-            stdout.write(f"\r{Fore.MAGENTA}|    [*] Attack Done!{' ' * 53}|\n")
+            stdout.write(f"\r{Fore.MAGENTA}\033[31m[*] Attack Done!{' ' * 53}|\n")
             print(f"{Fore.CYAN}|{'=' * 74}|")
             return
 
