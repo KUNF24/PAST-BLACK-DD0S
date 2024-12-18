@@ -48,8 +48,7 @@ def display_header():
     f"{Fore.RED}║\033[35m                           Design By: Kun'F                          ║ ",
     f"{Fore.RED}╚═════════════════════════════════════════════════════════════════╝ ",    
     ]
-
-   # Tampilkan header dengan warna
+    # Tampilkan header dengan warna
     for line in header_lines:
         print(line)
       
@@ -88,7 +87,7 @@ def get_target(url):
         'uri': urlparse(url).path or "/",
         'host': urlparse(url).netloc,
         'scheme': urlparse(url).scheme,
-        'port': urlparse(url).netloc.split(":")[1] if ":" in urlparse(url).netloc else ("443" if urlparse(url).scheme == "https" else "80")
+        'port': urlparse(url).netloc.split(":")[1] if ":" in urlparse(url).netloc else ("443" if urlparse(url).scheme "https" else "80")
     }
     log_attack_status(f"Target diperoleh: {target['host']} ({target['scheme']}://{target['host']}:{target['port']}{target['uri']})")
     return target
@@ -109,6 +108,7 @@ if __name__ == "__main__":
     target_url = get_user_input("URL:   ")
     while not validators.url(target_url):
         print(f"{Fore.RED}|    [ERROR] URL tidak valid. Coba lagi.{' ' * 37}|")
+        print(f"{Fore.CYAN}|{'=' * 74}|")
         target_url = get_user_input("URL:")
 
     try:
