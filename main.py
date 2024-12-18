@@ -104,15 +104,15 @@ if __name__ == "__main__":
     # Tampilkan Header
     display_header()
 
-    # Prompt untuk input dari pengguna dengan tampilan yang rapi
-    target_url = get_user_input("Masukkan target URL:   ")
+    
+    target_url = get_user_input("URL:   ")
     while not validators.url(target_url):
         print(f"{Fore.RED}|    [ERROR] URL tidak valid. Coba lagi.{' ' * 37}|")
         print(f"{Fore.CYAN}|{'=' * 74}|")
-        target_url = get_user_input("Masukkan target URL:")
+        target_url = get_user_input("URL:")
 
     try:
-        attack_duration = int(get_user_input("Masukkan durasi serangan (detik):"))
+        attack_duration = int(get_user_input("Duration(second):"))
     except ValueError:
         attack_duration = 60  # Default durasi
 
