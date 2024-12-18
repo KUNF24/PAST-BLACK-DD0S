@@ -20,15 +20,15 @@ def log_attack_status(message, level='info', print_to_terminal=True):
     if level == 'info':
         logging.info(message)
         if print_to_terminal:
-            print(f"{Fore.CYAN}|    [INFO] {message.ljust(63)}|")
+            print(f"{Fore.CYAN} [INFO] {Target.ljust(63)}")
     elif level == 'error':
         logging.error(message)
         if print_to_terminal:
-            print(f"{Fore.RED}|    [ERROR] {message.ljust(63)}|")
+            print(f"{Fore.RED} [ERROR] {Second.ljust(63)}")
     elif level == 'warning':
         logging.warning(message)
         if print_to_terminal:
-            print(f"{Fore.YELLOW}|    [WARNING] {message.ljust(63)}|")
+            print(f"{Fore.YELLOW} [WARNING] {message.ljust(63)}")
 
 
 # Fungsi untuk Menampilkan Header BASE dengan Warna
@@ -41,11 +41,12 @@ def display_header():
     f"{Fore.WHITE}   _/ _/ _/         _/ _/ _/   _/       _/   _/ _/         _/ _/      ",
     f"{Fore.CYAN}  _/               _/      _/ _/       _/ _/ _/  _/       _/   _/     ",
     f"{Fore.CYAN} _/               _/ _/ _/   _/ _/ _/ _/     _/   _/ _/  _/     _/     ",
+    f"{Fore.CYAN}                                                                           ",
     f"{Fore.RED}╔════════════════════════════════════════════════════════════════════╗ ",   
-    f"{Fore.RED}║\033[32m                   PASTBLACK IS A FALLING DARK ATTACK               ║ ",
-    f"{Fore.RED}║\033[33m                FOR THE PURPOSE OF RECOMMENDING ARROGANCE           ║ ",
-    f"{Fore.RED}║\033[34m                      THEN USE IT FOR GOOD PURPOSES                 ║ ",
-    f"{Fore.RED}║\033[35m                             Design By: Kun'F                       ║ ",
+    f"{Fore.RED}║\033[32m                 PASTBLACK IS A FALLING DARK ATTACK                 ║ ",
+    f"{Fore.RED}║\033[33m              FOR THE PURPOSE OF RECOMMENDING ARROGANCE             ║ ",
+    f"{Fore.RED}║\033[34m                    THEN USE IT FOR GOOD PURPOSES                   ║ ",
+    f"{Fore.RED}║\033[35m                           Design By: Kun'F                         ║ ",
     f"{Fore.RED}╚════════════════════════════════════════════════════════════════════╝ ",    
     ]
     # Tampilkan header dengan warna
@@ -106,7 +107,7 @@ if __name__ == "__main__":
         target_url = get_user_input("URL: ")
 
     try:
-        attack_duration = int(get_user_input("Attack_duration: "))
+        attack_duration = int(get_user_input("Duration: "))
     except ValueError:
         attack_duration = 60  # Default durasi
 
