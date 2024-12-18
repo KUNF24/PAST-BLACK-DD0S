@@ -51,15 +51,16 @@ def display_header():
     f"{Fore.RED}║\033[35m                           Design By: Kun'F                   {Fore.RED}║ ",
     f"{Fore.RED}╚════════════════════════════════════════════════════════════════════╝ ",    
     ]
-    # Tampilkan header dengan warna
+
+# Tampilkan header dengan warna
     for line in header_lines:
         print(line)
 
 # Fungsi untuk Meminta Input dari Pengguna dengan Tampilan Rapi
 def get_user_input(prompt_message):
-    print(f"{Fore.GREEN}{' ' * 4}[?] {prompt_message.ljust(63)}")
+    print(f"{Fore.GREEN}|{' ' * 4}[?] {prompt_message.ljust(63)}|")
     return input(f"{Fore.YELLOW}{' ' * 4}> ").strip()
-      
+
 # Fungsi Countdown untuk Menampilkan Waktu Serangan
 def countdown(t):
     until = datetime.datetime.now() + datetime.timedelta(seconds=int(t))
@@ -70,7 +71,7 @@ def countdown(t):
             stdout.write(f"\r{Fore.MAGENTA}[*] {Fore.CYAN}P-BLACK {Fore.WHITE}Request-attack to  {Fore.YELLOW}" +str(url)+ "{Fore.PURPLE}=> {remaining_time:.2f} sec left {' ' * 26}|")
         else:
             stdout.flush()
-            stdout.write(f"\r{Fore.MAGENTA}\033[31m[*] Attack Done!{' ' * 53}|\n")
+            stdout.write(f"\r{Fore.MAGENTA}|    [*] Attack Done!{' ' * 53}|\n")
             print(f"{Fore.CYAN}|{'=' * 74}|")
             return
 
@@ -101,8 +102,8 @@ if __name__ == "__main__":
     # Tampilkan Header
     display_header()
 
-    
-    target_url = get_user_input("URL:   ")
+    # Prompt untuk input dari pengguna dengan tampilan yang rapi
+    target_url = get_user_input("Masukkan target URL:   ")
     while not validators.url(target_url):
         print(f"{Fore.RED}|    [ERROR] URL tidak valid. Coba lagi.{' ' * 37}|")
         print(f"{Fore.CYAN}|{'=' * 74}|")
@@ -115,3 +116,4 @@ if __name__ == "__main__":
 
     # Luncurkan serangan
     launch_attack(target_url, attack_duration)
+
